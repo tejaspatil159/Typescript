@@ -50,3 +50,11 @@ var c3 = color.green;
 console.log(c1);
 console.log(c2);
 console.log(c3);
+//----------------9 any
+//not good
+var num = 10;
+num = "hello";
+var sub = 20;
+console.log(sub.name);
+sub();
+sub.toUpperCase();

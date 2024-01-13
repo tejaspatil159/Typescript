@@ -66,3 +66,13 @@ let c3: color = color.green;
 console.log(c1);
 console.log(c2);
 console.log(c3);
+
+//----------------9 any
+//not good
+let num: any = 10;
+num = "hello";
+
+let sub: any = 20;
+console.log(sub.name);
+sub();
+sub.toUpperCase();
