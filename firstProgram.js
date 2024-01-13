@@ -100,3 +100,10 @@ function exponential(num1, num2) {
 }
 console.log(exponential(2));
 console.log(exponential(3, 2));
+function fullName(person) {
+    console.log("".concat(person.fName, " ").concat(person.lName));
+}
+var p = {
+    fName: "Tejas",
+};
+fullName(p);

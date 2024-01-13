@@ -132,3 +132,27 @@ function exponential(num1: number, num2: number = 3) {
 
 console.log(exponential(2));
 console.log(exponential(3, 2));
+
+//-------------------------Interface----------------------
+
+// function fullName(person: { fName: string; lName: string }) {
+//   console.log(`${person.fName} ${person.lName}`);
+// }
+// let p = {
+//   fName: "Tejas",
+//   lName: "Patil",
+// };
+// fullName(p);
+
+interface Person {
+  fName: string;
+  lName?: string;
+}
+
+function fullName(person: Person) {
+  console.log(`${person.fName} ${person.lName}`);
+}
+let p = {
+  fName: "Tejas",
+};
+fullName(p);
