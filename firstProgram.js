@@ -26,5 +26,6 @@ console.log(identity);
 //----------------5 undefined
 var n = null;
 var u = undefined;
-var value = null;
-var myName = undefined;
+//dont use
+//let value: boolean = null;
+//let myName: string = undefined;
