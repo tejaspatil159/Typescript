@@ -59,7 +59,44 @@ console.log(sub.name);
 // sub();
 //sub.toUpperCase();
 //----------------9 unknown
-//alternative to any
+//alternative to any and preffered
 var city = "mumbai";
 var upperCaseCity = city.toUpperCase();
 console.log(upperCaseCity);
+//----------------type inference
+//only declaration is not good practice here type inference not work
+var item;
+item = true;
+item = 20;
+//declaration along with initiallization is good practice where type inference works
+var istrue = true;
+//istrue=20  here error occurs
+//----------------union types
+var multitype;
+multitype = "ten";
+multitype = 10;
+console.log(multitype);
+//-------------------------functions----------------------
+function divide(num1, num2) {
+    return num1 / num2;
+}
+console.log(divide(20, 5));
+//----------------optional parameter in function
+//we can have multiple optional parameter but it should be after required parameters
+var mul = function (num1, num2) {
+    if (num2) {
+        return num1 * num2;
+    }
+    else {
+        return num1;
+    }
+};
+console.log(mul(20, 5));
+console.log(mul(20));
+//----------------default parameter in function
+function exponential(num1, num2) {
+    if (num2 === void 0) { num2 = 3; }
+    return Math.pow(num1, num2);
+}
+console.log(exponential(2));
+console.log(exponential(3, 2));

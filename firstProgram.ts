@@ -78,8 +78,57 @@ console.log(sub.name);
 //sub.toUpperCase();
 
 //----------------9 unknown
-//alternative to any
+//alternative to any and preffered
 
 let city: unknown = "mumbai";
 let upperCaseCity: string = (city as string).toUpperCase();
 console.log(upperCaseCity);
+
+//----------------type inference
+
+//only declaration is not good practice here type inference not work
+let item;
+item = true;
+item = 20;
+
+//declaration along with initiallization is good practice where type inference works
+let istrue = true;
+//istrue=20  here error occurs
+
+//----------------union types
+
+let multitype: number | string;
+multitype = "ten";
+multitype = 10;
+
+console.log(multitype);
+
+//-------------------------functions----------------------
+
+function divide(num1: number, num2: number): number {
+  return num1 / num2;
+}
+console.log(divide(20, 5));
+
+//----------------optional parameter in function
+//we can have multiple optional parameter but it should be after required parameters
+
+const mul = (num1: number, num2?: number): number => {
+  if (num2) {
+    return num1 * num2;
+  } else {
+    return num1;
+  }
+};
+
+console.log(mul(20, 5));
+console.log(mul(20));
+
+//----------------default parameter in function
+
+function exponential(num1: number, num2: number = 3) {
+  return num1 ** num2;
+}
+
+console.log(exponential(2));
+console.log(exponential(3, 2));
