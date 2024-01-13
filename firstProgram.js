@@ -22,3 +22,9 @@ var name = "Tejas";
 //--------Template string
 var identity = "I am ".concat(name, ", value of pie is ").concat(pie, " your value is ").concat(isEnable);
 console.log(identity);
+//----------------4 null
+//----------------5 undefined
+var n = null;
+var u = undefined;
+var value = null;
+var myName = undefined;

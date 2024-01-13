@@ -29,3 +29,12 @@ const name: string = "Tejas";
 
 let identity = `I am ${name}, value of pie is ${pie} your value is ${isEnable}`;
 console.log(identity);
+
+//----------------4 null
+//----------------5 undefined
+let n: null = null;
+let u: undefined = undefined;
+
+//dont use
+//let value: boolean = null;
+//let myName: string = undefined;
