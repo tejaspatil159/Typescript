@@ -39,10 +39,30 @@ let u: undefined = undefined;
 //let value: boolean = null;
 //let myName: string = undefined;
 
-//----------------5 array
+//----------------6 array
 
 let list: number[] = [1, 2, 3];
 let list2: Array<number> = [4, 5, 6];
 
 console.log(list);
 console.log(list2);
+
+//----------------7 tuple
+
+let person: [string, number] = ["bruce", 26];
+console.log(person);
+
+//----------------8 enum
+
+enum color {
+  red,
+  blue = 10,
+  green,
+}
+
+let c1: color = color.red;
+let c2: color = color.blue;
+let c3: color = color.green;
+console.log(c1);
+console.log(c2);
+console.log(c3);

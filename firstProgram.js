@@ -29,8 +29,24 @@ var u = undefined;
 //dont use
 //let value: boolean = null;
 //let myName: string = undefined;
-//----------------5 array
+//----------------6 array
 var list = [1, 2, 3];
 var list2 = [4, 5, 6];
 console.log(list);
 console.log(list2);
+//----------------7 tuple
+var person = ["bruce", 26];
+console.log(person);
+//----------------8 enum
+var color;
+(function (color) {
+    color[color["red"] = 0] = "red";
+    color[color["blue"] = 10] = "blue";
+    color[color["green"] = 11] = "green";
+})(color || (color = {}));
+var c1 = color.red;
+var c2 = color.blue;
+var c3 = color.green;
+console.log(c1);
+console.log(c2);
+console.log(c3);
