@@ -56,5 +56,10 @@ var num = 10;
 num = "hello";
 var sub = 20;
 console.log(sub.name);
-sub();
-sub.toUpperCase();
+// sub();
+//sub.toUpperCase();
+//----------------9 unknown
+//alternative to any
+var city = "mumbai";
+var upperCaseCity = city.toUpperCase();
+console.log(upperCaseCity);

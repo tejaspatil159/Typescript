@@ -74,5 +74,12 @@ num = "hello";
 
 let sub: any = 20;
 console.log(sub.name);
-sub();
-sub.toUpperCase();
+// sub();
+//sub.toUpperCase();
+
+//----------------9 unknown
+//alternative to any
+
+let city: unknown = "mumbai";
+let upperCaseCity: string = (city as string).toUpperCase();
+console.log(upperCaseCity);
