@@ -38,3 +38,11 @@ let u: undefined = undefined;
 //dont use
 //let value: boolean = null;
 //let myName: string = undefined;
+
+//----------------5 array
+
+let list: number[] = [1, 2, 3];
+let list2: Array<number> = [4, 5, 6];
+
+console.log(list);
+console.log(list2);

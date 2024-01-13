@@ -29,3 +29,8 @@ var u = undefined;
 //dont use
 //let value: boolean = null;
 //let myName: string = undefined;
+//----------------5 array
+var list = [1, 2, 3];
+var list2 = [4, 5, 6];
+console.log(list);
+console.log(list2);
