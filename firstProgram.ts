@@ -156,3 +156,36 @@ let p = {
   fName: "Tejas",
 };
 fullName(p);
+
+//-------------------------Class----------------------
+
+class employee {
+  employeeName: string;
+
+  constructor(name: string) {
+    this.employeeName = name;
+  }
+
+  greet() {
+    console.log(`Good morning ${this.employeeName}`);
+  }
+}
+
+let emp1 = new employee("Tejas");
+console.log(emp1.employeeName);
+emp1.greet();
+
+class manager extends employee {
+  constructor(managerName: string) {
+    super(managerName);
+  }
+
+  greetManager() {
+    console.log(`Good morning manager ${this.employeeName}`);
+  }
+}
+
+let m1 = new manager("Sobhen");
+m1.greetManager();
+m1.greet();
+console.log(m1.employeeName);
