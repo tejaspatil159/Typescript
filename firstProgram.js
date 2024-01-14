@@ -149,3 +149,7 @@ var m1 = new manager("Sobhen");
 m1.greetManager();
 m1.greet();
 console.log(m1.employeeName);
+//-------------------------access modifiers----------------------
+//1.public
+//2.private
+//3/protected
